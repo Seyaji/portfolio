@@ -2,7 +2,50 @@
   "author": "Seyaji",
   "name": "portfolio",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
   "repository": "https://github.com/Seyaji/portfolio.git",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@pixi/filter-kawase-blur": "^4.1.5",
+    "@types/debounce": "^1.2.1",
+    "@types/hsl-to-hex": "^1.0.0",
+    "@webpack-cli/generators": "^2.4.2",
+    "debounce": "^1.2.1",
+    "hsl-to-hex": "^1.0.0",
+    "pixi.js": "^6.4.2",
+    "simplex-noise": "^3.0.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.41",
+    "@types/webpack": "^5.28.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "css-modules-typescript-loader": "^4.0.1",
+    "declaration-bundler-webpack-plugin": "^1.0.3",
+    "html-webpack-inline-svg-plugin": "^2.3.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.0",
+    "prettier": "^2.6.2",
+    "style-loader": "^3.3.1",
+    "svg-inline-loader": "^0.8.2",
+    "ts-loader": "^9.3.0",
+    "ts-node": "^10.8.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.73.0",
+    "webpack-dev-server": "^4.9.2",
+    "wepack-cli": "^0.0.1-security",
+    "workbox-webpack-plugin": "^6.5.3"
+  },
+  "description": "My portfoliooooooo!",
+  "scripts": {
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch",
+    "serve": "webpack serve"
+  }
 }
