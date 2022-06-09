@@ -3,6 +3,7 @@
     --light-color: hsl(var(--hue), 95%, 98%);
 
     --font-family: "Josefin Sans", sans-serif;
+    --font-color: white;
 }
 
 /*  ----------======*:$} Scroll-Bar {$:*======----------  */
@@ -33,16 +34,16 @@ html {
 
 h1,
 h2 {
-    color: white;
+    color: var(--font-color);
 }
 
 p {
-    color: white;
+    color: var(--font-color);
 }
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--font-color);
 }
 
 a:hover {
@@ -116,7 +117,7 @@ strong {
     justify-self: center;
     height: 100%;
     width: 100%;
-    fill: white;
+    fill: var(--font-color);
     text-align: center;
 }
 
@@ -126,7 +127,7 @@ strong {
     justify-content: center;
     width: 100%;
     font-size: 20pt;
-    color: white;
+    color: var(--font-color);
     position: fixed;
     padding-top: 1em;
     transition: 0.2s all ease;
@@ -140,7 +141,7 @@ strong {
     max-width: 90px;
     min-width: 90px;
     max-height: 90px;
-    fill: white;
+    fill: var(--font-color);
     text-align: center;
 }
 
@@ -153,7 +154,7 @@ strong {
 }
 
 .menu-link:hover::after {
-    color: white;
+    color: var(--font-color);
     transition: 0.5s;
 }
 
@@ -184,7 +185,7 @@ nav li:first-child {
 }
 
 nav a {
-    color: white;
+    color: var(--font-color);
     text-decoration: none;
     display: block;
 }
@@ -203,7 +204,7 @@ nav a {
     height: 100vh;
     max-width: 70%;
     max-height: 80%;
-    color: white;
+    color: var(--font-color);
     padding: 2em;
     transform: translateX(0px);
 }
@@ -214,7 +215,7 @@ nav a {
     max-height: 300px;
     min-width: 300px;
     padding: 1em;
-    fill: white;
+    fill: var(--font-color);
     text-align: center;
 }
 
@@ -253,11 +254,49 @@ nav a {
     height: 100vh;
     max-width: 100%;
     max-height: 100%;
-    color: white;
+    color: var(--font-color);
     padding-top: 10em;
 }
 
 #skills-title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24pt;
+    text-align: left;
+    padding-bottom: 2em;
+}
+
+.card-section{
+    padding-top: 3em;
+    padding-bottom: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.skills-card {
+    display: flex;
+    width: 250px;
+    height: 300px;
+    min-height: 300px;
+    min-width: 250px;
+    border: 1px solid red;
+}
+
+/*  ----------======*:$} Portfolio {$:*======----------  */
+
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 100vw;
+    max-width: 100%;
+    color: var(--font-color);
+    padding-top: 10em;
+}
+
+#portfolio-title {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 24pt;
@@ -275,7 +314,7 @@ nav a {
     height: 100vh;
     max-width: 70%;
     max-height: 80%;
-    color: white;
+    color: var(--font-color);
 }
 
 .linked-in-logo {
