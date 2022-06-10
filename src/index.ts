@@ -87,5 +87,4 @@ const listeners = skillCardArray.map((number: number , index: number) => {
     })
 })
 
-console.log("listeners", listeners)
 
