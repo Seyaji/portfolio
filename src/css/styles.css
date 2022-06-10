@@ -348,7 +348,6 @@ nav a {
     min-width: 200px;
     perspective: 1000px;
     padding: 1em;
-    border-radius: 20px;
 }
 
 .skill-card-inner {
@@ -382,6 +381,7 @@ nav a {
     -o-transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
     transform: rotateY(180deg);
+    border-radius: 20px;
 }
 
 .skill-logo {
