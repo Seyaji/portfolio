@@ -57,10 +57,12 @@ body {
     justify-content: center;
     max-width: 1920px;
     min-height: 100vh;
-    padding: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     font-family: var(--font-family);
     color: var(--light-color);
-    background: rgb(174, 93, 0);
+    /* background: rgb(174, 93, 0); */
+    background: rgb(171, 80, 0);
     overflow: scroll;
 }
 
@@ -83,6 +85,18 @@ strong {
 .fade-right {
     animation: fade-right 0.2s linear;
     animation-fill-mode: forwards;
+}
+
+
+.nav-background {
+    animation: fade 0.2s linear;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
+
+@keyframes fade {
+    from { background-color: transparent; }
+    to { background-color: rgba(255, 68, 0, 0.29); }
 }
 
 @keyframes fade-right {
@@ -143,6 +157,8 @@ strong {
     position: fixed;
     padding-top: 1em;
     transition: 0.2s all ease;
+    padding-bottom: .5em;
+    padding-top: .5em;
     z-index: 10;
 }
 
@@ -155,6 +171,7 @@ strong {
     max-height: 90px;
     fill: var(--font-color);
     text-align: center;
+    padding-bottom: .5em;
 }
 
 .menu-link {
@@ -182,11 +199,10 @@ nav ul {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    column-gap: 2rem;
 }
 
 nav li {
-    margin-top: -1em;
     padding: 0;
 }
 
@@ -329,6 +345,7 @@ nav a {
 }
 
 .skill-card-back {
+    background-color: rgba(255, 68, 0, 0.29);
     transform: scaleX(-1);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);

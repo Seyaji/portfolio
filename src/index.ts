@@ -60,6 +60,7 @@ const offsetValue = (source: number, target: number, percentage: number): number
 }
 
 const navIcon = document.getElementById("nav-logo")
+const nav = document.getElementById("nav")
 const skillsOffset = offsetValue(homeLocation, skillsLocation, 25)
 
 
@@ -67,11 +68,13 @@ document.addEventListener("scroll", (e) => {
     if (document.documentElement.scrollTop > skillsLocation - skillsOffset 
         && !navIcon.classList.contains("show")) {
         navIcon.classList.toggle('show')
+        nav.classList.toggle("nav-background")
     }
 
     if (document.documentElement.scrollTop < skillsLocation 
         && navIcon.classList.contains("show")) {
         navIcon.classList.toggle('show')
+        nav.classList.toggle("nav-background") 
     }
 
 })
