@@ -50,6 +50,10 @@ a:hover {
     text-decoration: underline;
 }
 
+.title {
+
+}
+
 body {
     display: flex;
     flex-wrap: wrap;
@@ -265,10 +269,19 @@ nav a {
 
 #skills-title {
     font-family: var(--font-family);
+    width: 100%;
     font-weight: 400;
     font-size: 24pt;
-    text-align: left;
-    padding-bottom: 2em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+#skills-heading {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
 }
 
 .card-section {
@@ -359,8 +372,12 @@ nav a {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 24pt;
-    text-align: left;
     padding-bottom: 2em;
+}
+
+#portfolio-heading {
+    width: 100%;
+    text-align: center;
 }
 
 /*  ----------======*:$} Contact {$:*======----------  */
@@ -368,31 +385,39 @@ nav a {
 #contact {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    align-content: flex-start;
+    align-content: center;
     justify-content: center;
+    justify-items: center;
     width: 100vw;
     height: 100vh;
     max-width: 70%;
     max-height: 80%;
     color: var(--font-color);
-    padding: 10em;
 }
 
 #contact-title {
     font-family: var(--font-family);
-    font-weight: 400;
+    align-self: center;
+    text-align: center;
     font-size: 24pt;
-    text-align: left;
-    padding-bottom: 2em;
+    min-width: 100%;
 }
 
 #contact-card {
-    display: flex;
-    align-items: center;
     justify-content: center;
+    align-content: center;
+    padding-top: 2em;
     min-width: 200px;
     min-height: 200px;
+}
+
+#contact-heading {
+    display: flex;
+    width: 100%;
+    padding: 2em;
+    align-content: center;
 }
 
 .contact-cards {
