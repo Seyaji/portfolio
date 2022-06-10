@@ -50,9 +50,6 @@ a:hover {
     text-decoration: underline;
 }
 
-.title {
-
-}
 
 body {
     display: flex;
@@ -340,9 +337,6 @@ nav a {
     transform: rotateY(180deg);
 }
 
-.skill-card:hover .skill-card-inner {
-}
-
 .skill-logo {
     max-width: 150px;
     min-width: 150px;
@@ -406,6 +400,7 @@ nav a {
 }
 
 #contact-card {
+    display: flex;
     justify-content: center;
     align-content: center;
     padding-top: 2em;
