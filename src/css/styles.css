@@ -348,6 +348,7 @@ nav a {
     min-width: 200px;
     perspective: 1000px;
     padding: 1em;
+    border-radius: 20px;
 }
 
 .skill-card-inner {
