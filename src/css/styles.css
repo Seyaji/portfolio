@@ -80,6 +80,15 @@ strong {
     font-weight: 600;
 }
 
+.title {
+    font-family: var(--font-family);
+    width: 100%;
+    font-weight: 400;
+    font-size: 24pt;
+    text-align: center;
+    padding: 1em;
+}
+
 /*  ----------======*:$} Aimation {$:*======----------  */
 
 .fade-right {
@@ -96,7 +105,7 @@ strong {
 
 @keyframes fade {
     from { background-color: transparent; }
-    to { background-color: rgba(255, 68, 0, 0.29); }
+    to { background-color: rgba(129, 56, 0, 0.245); }
 }
 
 @keyframes fade-right {
@@ -302,6 +311,8 @@ nav a {
     flex-wrap: wrap;
     flex-direction: row;
     width: 70%;
+    background-color: rgba(129, 56, 0, 0.245);
+    border-radius: 20px;
     justify-content: center;
     align-content: flex-start;
     padding-top: 3em;
@@ -345,7 +356,7 @@ nav a {
 }
 
 .skill-card-back {
-    background-color: rgba(255, 68, 0, 0.29);
+    background-color: rgba(129, 56, 0, 0.245);
     transform: scaleX(-1);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
@@ -379,12 +390,6 @@ nav a {
     padding-top: 10em;
 }
 
-#portfolio-title {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 24pt;
-    padding-bottom: 2em;
-}
 
 #portfolio-heading {
     width: 100%;
@@ -408,12 +413,10 @@ nav a {
     color: var(--font-color);
 }
 
-#contact-title {
-    font-family: var(--font-family);
-    align-self: center;
-    text-align: center;
-    font-size: 24pt;
-    min-width: 100%;
+#contact-wrapper {
+    background-color: rgba(129, 56, 0, 0.245);
+    padding: 2em;
+    border-radius: 20px;
 }
 
 #contact-card {
