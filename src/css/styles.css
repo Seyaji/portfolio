@@ -96,9 +96,16 @@ strong {
 }
 
 .nav-background {
-    animation: fade 0.2s linear;
+    animation-name: fade;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
     animation-fill-mode: forwards;
     animation-direction: alternate;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-direction: alternate;
     backdrop-filter: blur(10px);
 }
 
@@ -107,6 +114,14 @@ strong {
         background-color: transparent;
     }
     to {
+        background-color: rgba(129, 56, 0, 0.245);
+    }
+}
+@-webkit-keyframes fade {
+    0% {
+        background-color: transparent;
+    }
+    100% {
         background-color: rgba(129, 56, 0, 0.245);
     }
 }
