@@ -54,13 +54,11 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1920px;
     min-height: 100vh;
     padding-left: 2rem;
     padding-right: 2rem;
     font-family: var(--font-family);
     color: var(--light-color);
-    /* background: rgb(174, 93, 0); */
     background: rgb(171, 80, 0);
     overflow: scroll;
 }
