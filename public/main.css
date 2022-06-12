@@ -85,7 +85,7 @@ strong {
     font-weight: 400;
     font-size: 24pt;
     text-align: center;
-    padding: 1em;
+    padding-top: 1em;
 }
 
 /*  ----------======*:$} Aimation {$:*======----------  */
@@ -161,6 +161,18 @@ strong {
     display: flex !important;
 }
 
+.add-bkg {
+    align-self: center;
+    padding: .5em;
+    margin-bottom: -1em;
+    text-align: center;
+    background-color: rgba(129, 56, 0, 0.245);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top: 2px solid rgba(255, 255, 255, 0.051);
+    width: 120px;
+}
+
 /*  ----------======*:$} Nav {$:*======----------  */
 
 #nav-logo {
@@ -185,7 +197,7 @@ strong {
     padding-top: 1em;
     transition: 0.2s all ease;
     padding-bottom: 0.5em;
-    padding-top: 0.5em;
+    padding-top: 1em;
     z-index: 10;
 }
 
@@ -304,17 +316,17 @@ nav a {
     width: 100vw;
     max-width: 100%;
     color: var(--font-color);
-    padding-top: 10em;
+    padding-top: 7em;
 }
 
-#skills-title {
+/* #skills-title {
     font-family: var(--font-family);
     width: 100%;
     font-weight: 400;
     font-size: 24pt;
     text-align: center;
     padding-bottom: 1em;
-}
+} */
 
 #skills-heading {
     display: flex;
@@ -325,16 +337,13 @@ nav a {
 }
 
 .card-section {
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     width: 70%;
     background-color: rgba(129, 56, 0, 0.245);
     border-radius: 20px;
+    border-left: 2px solid rgba(255, 255, 255, 0.051);
+    margin-top: 2em;
     justify-content: center;
-    align-content: flex-start;
-    padding-top: 3em;
-    padding-bottom: 3em;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -381,6 +390,7 @@ nav a {
     -o-transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
     transform: rotateY(180deg);
+    border-radius: 20px;
 }
 
 .skill-logo {
@@ -434,6 +444,7 @@ nav a {
     background-color: rgba(129, 56, 0, 0.245);
     padding: 2em;
     border-radius: 20px;
+    text-align: center;
 }
 
 #contact-card {

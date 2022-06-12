@@ -88,6 +88,10 @@ strong {
     padding-top: 1em;
 }
 
+.fill-svg {
+    fill: var(--font-color) !important;
+}
+
 /*  ----------======*:$} Aimation {$:*======----------  */
 
 .fade-right {
@@ -101,12 +105,13 @@ strong {
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     animation-direction: alternate;
+    backdrop-filter: blur(10px);
     -webkit-animation-name: fade;
     -webkit-animation-duration: 0.2s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-direction: alternate;
-    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 @keyframes fade {
@@ -468,10 +473,6 @@ nav a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.fill-svg {
-    fill: var(--font-color);
 }
 
 #hire-me {

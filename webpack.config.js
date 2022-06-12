@@ -5,6 +5,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
 const HtmlWebpackInlineSVGPlugin = require('html-webpack-inline-svg-plugin');
+const CopyWebpackPlugin = require("copy-webpack-plugin")
 
 const isProduction = process.env.NODE_ENV == "production";
 
@@ -22,7 +23,7 @@ const config = {
     },
     plugins: [
         // new CopyWebpackPlugin({
-        //     patterns: [{ from: "src/img/", to: path.resolve(__dirname, "dist/img") }],
+        //     patterns: [{ from: "src/img", to: path.resolve(__dirname, "/public/img") }],
         // }),
         new HtmlWebpackInlineSVGPlugin(),
         new HtmlWebpackPlugin({
