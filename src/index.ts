@@ -69,12 +69,14 @@ document.addEventListener("scroll", (e) => {
         && !navIcon.classList.contains("show")) {
         navIcon.classList.toggle('show')
         nav.classList.toggle("nav-background")
+        nav.classList.toggle("down")
     }
 
     if (document.documentElement.scrollTop < skillsLocation 
         && navIcon.classList.contains("show")) {
         navIcon.classList.toggle('show')
-        nav.classList.toggle("nav-background") 
+        nav.classList.toggle("nav-background")
+        nav.classList.toggle("down")
     }
 
 })

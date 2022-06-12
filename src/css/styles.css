@@ -129,34 +129,47 @@ strong {
     }
 }
 
-@keyframes fade-right {
-    0% {
-        transform: translateX(0%);
-    }
-    50% {
-        transform: translateX(75%);
-    }
-    100% {
-        transform: translateX(150%);
-    }
-}
 
-.fade-left {
-    animation: fade-left 0.2s linear;
+.down {
+    animation-name: down;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
     animation-fill-mode: forwards;
-    display: flex !important;
-    transform: translateX(0%);
+    animation-direction: alternate;
+    backdrop-filter: blur(10px);
+    -webkit-animation-name: down;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-fill-mode: forwards;
+    -webkit-animation-direction: alternate;
+    -webkit-backdrop-filter: blur(10px);
 }
 
-@keyframes fade-left {
+@keyframes down {
     0% {
-        transform: translateX(-1500%);
+        transform: translateY(-85px);
+        background-color: transparent;
     }
     50% {
-        transform: translateX(-75%);
+        transform: translateY(-43px);
     }
     100% {
-        transform: translateX(0%);
+        transform: translateY(-10px);
+        background-color: rgba(129, 56, 0, 0.245);
+    }
+}
+
+@-webkit-keyframes down {
+    0% {
+        transform: translateY(-85px);
+        background-color: transparent;
+    }
+    50% {
+        transform: translateY(-43px);
+    }
+    100% {
+        transform: translateY(-10px);
+        background-color: rgba(129, 56, 0, 0.245);
     }
 }
 
@@ -179,7 +192,7 @@ strong {
 /*  ----------======*:$} Nav {$:*======----------  */
 
 #nav-logo {
-    display: none;
+    /* display: none; */
     align-items: flex-start;
     justify-content: center;
     justify-self: center;
@@ -202,6 +215,7 @@ strong {
     padding-bottom: 0.5em;
     padding-top: 1em;
     z-index: 10;
+    transform: translateY(-85px);
 }
 
 #nav-logo-svg {
@@ -322,14 +336,6 @@ nav a {
     padding-top: 7em;
 }
 
-/* #skills-title {
-    font-family: var(--font-family);
-    width: 100%;
-    font-weight: 400;
-    font-size: 24pt;
-    text-align: center;
-    padding-bottom: 1em;
-} */
 
 #skills-heading {
     display: flex;
