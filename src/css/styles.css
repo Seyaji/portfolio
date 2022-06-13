@@ -143,6 +143,7 @@ strong {
     -webkit-animation-fill-mode: forwards;
     -webkit-animation-direction: alternate;
     -webkit-backdrop-filter: blur(10px);
+
 }
 
 @keyframes down {
@@ -192,7 +193,6 @@ strong {
 /*  ----------======*:$} Nav {$:*======----------  */
 
 #nav-logo {
-    /* display: none; */
     align-items: flex-start;
     justify-content: center;
     justify-self: center;
