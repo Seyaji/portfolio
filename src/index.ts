@@ -87,7 +87,7 @@ const skillCardArray = Array(skillCards.length).fill(1)
 const listeners = skillCardArray.map((number: number , index: number) => {
     let skillCard = document.getElementById("inner-"+ (index + 1).toString())
     return skillCard.addEventListener('click' , (e) => {
-        skillCard.classList.toggle("test")
+        skillCard.classList.toggle("flip")
     })
 })
 

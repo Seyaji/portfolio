@@ -409,7 +409,7 @@ nav a {
     max-height: 150px;
 }
 
-.test {
+.flip {
     transform: rotateY(-180deg);
 }
 
