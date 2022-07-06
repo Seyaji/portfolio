@@ -20,6 +20,7 @@ const config = {
     devServer: {
         open: true,
         host: "localhost",
+        port: 6060,
     },
     plugins: [
         // new CopyWebpackPlugin({
