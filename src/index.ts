@@ -55,17 +55,12 @@ const homeLocation = home.offsetTop
 const skills = document.getElementById("skills")
 const skillsLocation = skills.offsetTop
 
-const offsetValue = (source: number, target: number, percentage: number): number => {
-    return (target / 100) * percentage;
-}
-
 const navIcon = document.getElementById("nav-logo")
 const nav = document.getElementById("nav")
-const skillsOffset = offsetValue(homeLocation, skillsLocation, 25)
 
 
 document.addEventListener("scroll", (e) => {
-    if (document.documentElement.scrollTop > skillsLocation - skillsOffset 
+    if (document.documentElement.scrollTop > skillsLocation - homeLocation 
         && !navIcon.classList.contains("show")) {
         navIcon.classList.toggle('show')
         nav.classList.toggle("nav-background")
@@ -80,15 +75,3 @@ document.addEventListener("scroll", (e) => {
     }
 
 })
-
-const skillCards = document.getElementsByClassName('skill-card')
-const skillCardArray = Array(skillCards.length).fill(1)
-
-const listeners = skillCardArray.map((number: number , index: number) => {
-    let skillCard = document.getElementById("inner-"+ (index + 1).toString())
-    return skillCard.addEventListener('click' , (e) => {
-        skillCard.classList.toggle("flip")
-    })
-})
-
-
