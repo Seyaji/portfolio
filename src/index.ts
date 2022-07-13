@@ -52,22 +52,27 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
 const home = document.getElementById("home")
 const homeLocation = home.offsetTop
 
-const skills = document.getElementById("skills")
-const skillsLocation = skills.offsetTop
+const skills = document.getElementById("home-heading")
+const homeheading = skills.offsetTop
+
+const offsetValue = (source: number, target: number, percentage: number): number => {
+    return (target / 100) * percentage;
+}
 
 const navIcon = document.getElementById("nav-logo")
 const nav = document.getElementById("nav")
 
 
 document.addEventListener("scroll", (e) => {
-    if (document.documentElement.scrollTop > skillsLocation - homeLocation 
+    if (document.documentElement.scrollTop > homeheading
         && !navIcon.classList.contains("show")) {
+          console.log(homeheading)
         navIcon.classList.toggle('show')
         nav.classList.toggle("nav-background")
         nav.classList.toggle("down")
     }
 
-    if (document.documentElement.scrollTop < skillsLocation 
+    if (document.documentElement.scrollTop < homeheading
         && navIcon.classList.contains("show")) {
         navIcon.classList.toggle('show')
         nav.classList.toggle("nav-background")
@@ -75,3 +80,15 @@ document.addEventListener("scroll", (e) => {
     }
 
 })
+
+const skillCards = document.getElementsByClassName('skill-card')
+const skillCardArray = Array(skillCards.length).fill(1)
+
+const listeners = skillCardArray.map((number: number , index: number) => {
+    let skillCard = document.getElementById("inner-"+ (index + 1).toString())
+    return skillCard.addEventListener('click' , (e) => {
+        skillCard.classList.toggle("flip")
+    })
+})
+
+
